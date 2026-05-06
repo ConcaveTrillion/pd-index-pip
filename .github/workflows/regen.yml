@@ -32,6 +32,12 @@ permissions:
   pages: write
   id-token: write
 
+# Opt into Node 24 now; Node 20 is deprecated on the runner and will be the
+# default in June 2026. Most pinned actions below are still on Node 20 today
+# (no Node-24-native release available) — this env var forces them onto 24.
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 # Don't queue Pages deployments — if a newer regen kicks off mid-deploy,
 # let it finish and then run again. cancel-in-progress: false is the
 # documented setting for Pages workflows.
@@ -46,7 +52,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - uses: actions/setup-python@v5
         with:
