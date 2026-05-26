@@ -1,6 +1,6 @@
-# pd-index-pip
+# pdomain-index-pip
 
-Agent guidance for the `pd-index-pip` repo.
+Agent guidance for the `pdomain-index-pip` repo.
 
 <!-- workspace-process:start -->
 

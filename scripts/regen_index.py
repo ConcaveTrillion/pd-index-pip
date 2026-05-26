@@ -24,16 +24,16 @@ ORG = "ConcaveTrillion"
 # Keep alphabetized. Append a new repo here when it starts cutting releases —
 # safe to list a repo with zero releases (renders an empty page).
 REPOS: list[str] = [
-    "pd-book-tools",
-    "pd-ocr-cli",
+    "pdomain-book-tools",
+    "pdomain-ocr-cli",
     "pd-ocr-labeler",
-    "pd-ocr-labeler-spa",
-    "pd-ocr-ops",
-    "pd-ocr-synth",
-    "pd-ocr-training",
+    "pdomain-ocr-labeler-spa",
+    "pdomain-ocr-ops",
+    "pdomain-ocr-synth",
+    "pdomain-ocr-training",
     "pd-ocr-trainer",
     "pd-png-optimizer",
-    "pd-prep-for-pgdp",
+    "pdomain-prep-for-pgdp",
 ]
 
 
