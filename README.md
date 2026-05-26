@@ -14,10 +14,10 @@ https://concavetrillion.github.io/pd-index/simple/
 
 ## How consumers use it
 
-Add `--extra-index-url https://concavetrillion.github.io/pd-index/simple/` to whatever invocation installs a `pd-*` wheel. For example, the `pd-ocr-cli/install.sh` script can:
+Add `--extra-index-url https://concavetrillion.github.io/pd-index/simple/` to whatever invocation installs a `pd-*` wheel. For example, the `pdomain-ocr-cli/install.sh` script can:
 
 ```sh
-uv tool install --reinstall ./pd_ocr_cli-X.Y.Z-py3-none-any.whl \
+uv tool install --reinstall ./pdomain_ocr_cli-X.Y.Z-py3-none-any.whl \
     --extra-index-url https://concavetrillion.github.io/pd-index/simple/
 ```
 

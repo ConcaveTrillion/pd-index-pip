@@ -1,4 +1,4 @@
-# pd-index-pip conventions
+# pdomain-index-pip conventions
 
 <!-- workspace-conventions:start -->
 
