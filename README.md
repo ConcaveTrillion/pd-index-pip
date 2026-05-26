@@ -9,16 +9,16 @@ Wheels themselves live as **GitHub Release assets** in each individual `pd-*` re
 Once GitHub Pages is enabled on this repo, the index will be live at:
 
 ```
-https://concavetrillion.github.io/pd-index/simple/
+https://pdomain.github.io/pdomain-index-pip/simple/
 ```
 
 ## How consumers use it
 
-Add `--extra-index-url https://concavetrillion.github.io/pd-index/simple/` to whatever invocation installs a `pd-*` wheel. For example, the `pdomain-ocr-cli/install.sh` script can:
+Add `--extra-index-url https://pdomain.github.io/pdomain-index-pip/simple/` to whatever invocation installs a `pd-*` wheel. For example, the `pdomain-ocr-cli/install.sh` script can:
 
 ```sh
 uv tool install --reinstall ./pdomain_ocr_cli-X.Y.Z-py3-none-any.whl \
-    --extra-index-url https://concavetrillion.github.io/pd-index/simple/
+    --extra-index-url https://pdomain.github.io/pdomain-index-pip/simple/
 ```
 
 For a project's `pyproject.toml` (declarative form):
@@ -26,7 +26,7 @@ For a project's `pyproject.toml` (declarative form):
 ```toml
 [[tool.uv.index]]
 name = "pd-index"
-url = "https://concavetrillion.github.io/pd-index/simple/"
+url = "https://pdomain.github.io/pdomain-index-pip/simple/"
 explicit = false
 ```
 
