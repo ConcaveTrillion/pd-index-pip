@@ -134,7 +134,7 @@ release-major: ## Release: bump major, run ci, tag, push, trigger release workfl
 	@$(MAKE) --no-print-directory _do-release BUMP=major
 
 # scripts/do-release.sh handles repo-state guards, runs the make ci pre-flight,
-# creates the three-component tag, pushes main + exact tag, then dispatches
+# creates the three-component tag, pushes master + exact tag, then dispatches
 # .github/workflows/release.yml with that tag.
 # Pass FORCE=1 to skip repo-state guards (pre-flight still runs).
 # Pass SKIP_PUSH=1 to create the tag locally without pushing.

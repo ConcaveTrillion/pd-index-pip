@@ -36,7 +36,7 @@ explicit = false
 
 1. Calls `scripts/regen_index.py`, which uses the GitHub API (read-only, public, no PAT required) to enumerate every release asset across the configured pdomain repos.
 1. Renders PEP 503 simple-index HTML into `_site/simple/`.
-1. Deploys `_site/` via [`actions/deploy-pages`](https://github.com/actions/deploy-pages) — no commits are made to `main` from CI.
+1. Deploys `_site/` via [`actions/deploy-pages`](https://github.com/actions/deploy-pages) — no commits are made to `master` from CI.
 
 The generator only indexes distribution assets whose normalized package name
 matches the generated simple-index project page. Historical `pd_*` assets in
