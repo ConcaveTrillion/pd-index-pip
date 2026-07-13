@@ -14,21 +14,39 @@ https://pdomain.github.io/pdomain-index-pip/simple/
 
 ## How consumers use it
 
-Add `--extra-index-url https://pdomain.github.io/pdomain-index-pip/simple/` to whatever invocation installs a pdomain wheel. For example, the `pdomain-ocr-cli/install.sh` script can:
+For a one-off install, pin the pdomain distribution to its direct release-asset
+URL. Copy the wheel link from the generated project page so its `#sha256=`
+fragment is retained when GitHub provides a digest:
 
 ```sh
-uv tool install --reinstall ./pdomain_ocr_cli-X.Y.Z-py3-none-any.whl \
-    --extra-index-url https://pdomain.github.io/pdomain-index-pip/simple/
+uv tool install \
+    'pdomain-ocr-cli @ https://github.com/pdomain/pdomain-ocr-cli/releases/download/vX.Y.Z/pdomain_ocr_cli-X.Y.Z-py3-none-any.whl#sha256=<sha256>'
 ```
 
-For a project's `pyproject.toml` (declarative form):
+Configure authentication for the artifact host when the release is private;
+do not put credentials in the recorded command. The direct requirement pins
+the target distribution, while its public transitive dependencies still resolve
+from PyPI.
+
+For a project's `pyproject.toml`, make the index explicit and map each pdomain
+distribution to it. This prevents fallback to a same-named public package:
 
 ```toml
 [[tool.uv.index]]
 name = "pdomain-index-pip"
 url = "https://pdomain.github.io/pdomain-index-pip/simple/"
-explicit = false
+explicit = true
+
+[tool.uv.sources]
+pdomain-ops = { index = "pdomain-index-pip" }
+pdomain-book-tools = { index = "pdomain-index-pip" }
 ```
+
+An unrestricted `--index` or `--extra-index-url` one-off command is not a
+package-to-source pin: if the private index has no matching project, resolution
+can continue by package name on another index. See
+[the private-index decision](docs/decisions/private-index-resolution.md) for
+the full rationale. A direct local wheel path needs no index option.
 
 ## How it stays up to date
 
@@ -42,6 +60,10 @@ The generator only indexes distribution assets whose normalized package name
 matches the generated simple-index project page. Historical `pd_*` assets in
 renamed repos are intentionally skipped rather than published under the new
 `pdomain-*` package names.
+
+The complete trust boundary, fail-closed behavior, and digest handling are
+documented in the
+[release-asset index architecture](docs/architecture/python-release-asset-index.md).
 
 To trigger an immediate rebuild without waiting for cron, individual release workflows can dispatch a `pdomain-release-published` event to this repo (one HTTP call with a fine-grained PAT). The daily cron is the safety net.
 
@@ -57,12 +79,17 @@ GitHub-generated release notes are canonical for tooling releases.
 
 ## Why not just publish to PyPI?
 
-Eventually we may. This index is a stepping stone: it speaks the same protocol PyPI does, so migrating later is a matter of `uv publish` + dropping the `--extra-index-url` flag. No wheel changes, no metadata changes.
+Eventually we may. This index is a stepping stone: it speaks the same protocol
+PyPI does, so migration means publishing with `uv publish`, removing each
+package's `[tool.uv.sources]` mapping, and replacing direct artifact requirements
+with normal PyPI package requirements. No wheel or package metadata changes are
+required.
 
 The pdomain Python repos already follow a few habits to keep that door open:
 
 - Plain version-pinned dep specifiers in `pyproject.toml` (no PEP 508 direct-URL deps that PyPI would reject).
-- Release versions are immutable (no asset overwrites — PyPI rejects re-uploads of the same version).
+- A PyPI migration must use a new version for every changed distribution because
+  PyPI rejects re-uploads of the same version.
 - PEP 440-clean version strings.
 
 ## Local dry-run
