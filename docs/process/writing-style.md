@@ -1,4 +1,22 @@
+<!--
+Status: active
+Owner: CT
+Created: 2026-05-28
+Last verified: 2026-07-14
+Kind: process
+-->
+
 # Writing Style
+
+## Agent Index
+
+- **Status:** active
+- **Owner:** CT
+- **Created:** 2026-05-28
+- **Last verified:** 2026-07-14
+- **Kind:** process
+- **Read when:** writing or reviewing reader-facing prose.
+- **Search terms:** readability, writing style, documentation, reader-facing prose.
 
 Use this style for docs, reports, issue text, PR text, and user-facing copy.
 
@@ -11,6 +29,9 @@ Aim for about a 7th grade English level.
 ## Rules
 
 - Use short, clear sentences.
+- Lead with the answer or main point.
+- Give each paragraph one idea and lead with that idea.
+- Use headings that name their content.
 - Put one idea in each sentence.
 - Do not make every sentence the same length. Vary the rhythm when it helps the
   text feel natural.
@@ -20,6 +41,7 @@ Aim for about a 7th grade English level.
 - Avoid long chains of clauses.
 - Use short paragraphs, but keep closely related sentences together.
 - Avoid repeating the same idea in nearby sentences.
+- Preserve every fact, number, name, and condition while editing.
 - Use lists when they make steps or choices easier to scan.
 - Keep technical terms when they are the correct names.
 - Explain a technical term the first time it may be unclear.

@@ -1,4 +1,22 @@
+<!--
+Status: active
+Owner: CT
+Created: 2026-05-06
+Last verified: 2026-07-14
+Kind: usage
+-->
+
 # pdomain-index-pip
+
+## Agent Index
+
+- **Status:** active
+- **Owner:** CT
+- **Created:** 2026-05-06
+- **Last verified:** 2026-07-14
+- **Kind:** usage
+- **Read when:** using, operating, or developing the package index.
+- **Search terms:** pip index, uv index, release assets, local development.
 
 Self-hosted [PEP 503](https://peps.python.org/pep-0503/) simple Python package index for pdomain Python repos under [github.com/pdomain](https://github.com/pdomain).
 
@@ -111,3 +129,5 @@ make smoke-regen
 Releases are repo-code releases only. Use `make release-patch`,
 `make release-minor`, or `make release-major`; the script runs `make ci`,
 pushes the exact tag, and dispatches `.github/workflows/release.yml`.
+
+Repository contributors and assistants start with [AGENTS.md](AGENTS.md).

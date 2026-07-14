@@ -1,4 +1,25 @@
+<!--
+Status: active
+Owner: CT
+Created: 2026-05-21
+Last verified: 2026-07-14
+Kind: process
+-->
+
 # pdomain-index-pip conventions
+
+## Agent Index
+
+- **Status:** active
+- **Owner:** CT
+- **Created:** 2026-05-21
+- **Last verified:** 2026-07-14
+- **Kind:** process
+- **Read when:** changing source, tests, tooling, documentation, or lint configuration.
+- **Search terms:** repository conventions, uv run, lint suppressions, design specs.
+
+Related conventions document [ignored local and generated surfaces](docs/conventions/ignored-surfaces.md)
+and the [audited lint deviations](docs/conventions/lint-deviations.md).
 
 <!-- workspace-conventions:start -->
 
@@ -93,20 +114,17 @@ fast (\<200 ms warm) and always selects the project venv.
 
 **The rule.** A design spec file produced by `/spec-from-issue` lives at
 `docs/specs/<date>-<topic>-design.md` while the milestone's chore issues are open.
-When the milestone's last chore closes and the implementation lands, move the file to
-`docs/architecture/` in a housekeeping commit:
+When the milestone's last chore closes and the implementation lands, promote
+the shipped truth into `docs/architecture/`. Under the docgraph lifecycle,
+preserve durable rationale and residual intent, record a tombstone, and remove
+implemented execution scaffolding after link-impact and strict checks pass.
 
-```bash
-git mv docs/specs/<date>-<topic>-design.md docs/architecture/
-git commit -m "docs: promote <topic> spec to architecture/ (milestone shipped)"
-```
+Update any `Spec: docs/specs/...` pointers in still-open issues as part of the
+promotion and retirement wave.
 
-Update any `Spec: docs/specs/...` pointers in still-open issues after the move.
-
-**Why.** `docs/specs/` is the active working area — implementing agents follow `Spec:`
-pointers to find their instructions. `docs/architecture/` is the permanent design record
-for shipped features. Mixing shipped and in-progress specs in one directory makes it
-unclear which specs are still authoritative for ongoing work.
+**Why.** `docs/specs/` is the active working area. `docs/architecture/` records
+current shipped behavior. Retired checklists remain recoverable from Git and
+tombstones without polluting current retrieval.
 
 **Common high-confidence violations** (bot auto-fix candidates)
 

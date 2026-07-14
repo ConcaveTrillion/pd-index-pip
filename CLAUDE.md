@@ -1,4 +1,22 @@
+---
+Status: active
+Owner: CT
+Created: 2026-05-21
+Last verified: 2026-07-14
+Kind: process
+---
+
 # pdomain-index-pip
+
+## Agent Index
+
+- **Status:** active
+- **Owner:** CT
+- **Created:** 2026-05-21
+- **Last verified:** 2026-07-14
+- **Kind:** process
+- **Read when:** planning, implementing, reviewing, or verifying repository work.
+- **Search terms:** development workflow, worktree, CI, delegation, verification.
 
 Agent guidance for the `pdomain-index-pip` repo.
 
@@ -33,7 +51,9 @@ change any step below.
    uncommitted work before starting — don't build on it.
 2. **Read repo guidance.** This repo's `CLAUDE.md` and `CONVENTIONS.md` for
    repo-specific rules.
-3. **Consult `docs/` for authoritative context** (whichever folders exist):
+3. **Consult repository context.** Read [DOCGRAPH.md](DOCGRAPH.md) when present,
+   then use its retrieval workflow and authored `docs/context/` ground truth.
+   Also consult the relevant folders under `docs/`:
    `plans/` (the work plan), `specs/` (design specs — follow any `Spec:`
    pointer from the issue), `research/` (prior investigations), `decisions/`
    (ADRs / constraints), `architecture/` (shipped design).
@@ -45,8 +65,8 @@ change any step below.
    corrections not yet promoted to `CONVENTIONS.md`.
 7. **Locate code with `Explore` first.** Use an `Explore` subagent to find
    relevant files before broad `Read`/grep.
-8. **Isolate in a worktree.** Never work directly in the interactive checkout
-   at `/workspaces/ocr-container/<repo>/`. Use the `using-git-worktrees` skill
+8. **Isolate in a worktree.** Never work directly in the interactive checkout.
+   Use the `using-git-worktrees` skill
    to set up an isolated worktree. When delegating to a full-power
    implementation agent, pass `isolation: "worktree"` on the `Agent` call
    (skip for `-docs` agents and the `driver` agent). When an agent returns a

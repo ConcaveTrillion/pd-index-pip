@@ -80,7 +80,7 @@ pd_release_main() {
     fi
 
     if [ "$RELEASE_VERSION_SOURCE" = "uv" ]; then
-        # shellcheck disable=SC2086 # RELEASE_VERSION_FILES is a repo-local file list.
+        # shellcheck disable=SC2086 # Intentional trusted-maintainer, space-delimited path contract.
         git add $RELEASE_VERSION_FILES
         if git diff --cached --quiet; then
             echo "ERROR: uv version did not change release files: $RELEASE_VERSION_FILES" >&2
