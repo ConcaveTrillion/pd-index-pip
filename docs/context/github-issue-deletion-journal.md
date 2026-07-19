@@ -48,16 +48,16 @@ Former issue URLs all follow
 
 | # | Node ID | Raw digest (SHA-256) | Destination | Deleted | Verified absent |
 | --- | --- | --- | --- | --- | --- |
-| 1 | `I_kwDOSWRi3c8AAAABCgbYgA` | `697b0ecd955ae94c033dfd75b783c569d4075c99341d60a8e3ae3af56cd1edaa` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 2 | `I_kwDOSWRi3c8AAAABCgbdvg` | `2bfda1f4704ad088891e8c67a5177e9cc687470b55e999ddf818126924a67b97` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 3 | `I_kwDOSWRi3c8AAAABCgbd0g` | `aabbf1d1aafc93be9a9b727da54d5024e4784fb786fef098cdc3f4c9e92c1437` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 4 | `I_kwDOSWRi3c8AAAABCgbd6g` | `cdf22341df0fb1709083070f81715dedcaedf6926d474f568701ee3ab536fcd3` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 5 | `I_kwDOSWRi3c8AAAABCgbeDQ` | `4a2c258f296ea405adccb36ecdec702bbd4cb6f56503fe1d5195f1f27bf36bc9` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 6 | `I_kwDOSWRi3c8AAAABCgbeFw` | `088b3dc22dcc37da8d0b6a211d7f23b4d4bd669ed660612a38f38e9ab9ccc216` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 7 | `I_kwDOSWRi3c8AAAABCgbeLA` | `808110d3f46edf4abe77a15e523c298c0843c59beb39f670acbcfc1ce1dbb709` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 8 | `I_kwDOSWRi3c8AAAABCgbeQA` | `fd9ee9c43909b607d97cc4e8384ce4c8d85ff55f58441c263fc230bce7cd9e77` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 9 | `I_kwDOSWRi3c8AAAABCgbeWQ` | `68ff2f20d669253b50e55e44608b61a28285eb11e684af33703edf4309ca7d90` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 10 | `I_kwDOSWRi3c8AAAABCgbecw` | `3407ccc25d37ea0c4a18d5ea262107a7c9759990de136a7c8233581bdf561dc5` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
+| 1 | `I_kwDOSWRi3c8AAAABCgbYgA` | `697b0ecd955ae94c033dfd75b783c569d4075c99341d60a8e3ae3af56cd1edaa` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 2 | `I_kwDOSWRi3c8AAAABCgbdvg` | `2bfda1f4704ad088891e8c67a5177e9cc687470b55e999ddf818126924a67b97` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 3 | `I_kwDOSWRi3c8AAAABCgbd0g` | `aabbf1d1aafc93be9a9b727da54d5024e4784fb786fef098cdc3f4c9e92c1437` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 4 | `I_kwDOSWRi3c8AAAABCgbd6g` | `cdf22341df0fb1709083070f81715dedcaedf6926d474f568701ee3ab536fcd3` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 5 | `I_kwDOSWRi3c8AAAABCgbeDQ` | `4a2c258f296ea405adccb36ecdec702bbd4cb6f56503fe1d5195f1f27bf36bc9` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 6 | `I_kwDOSWRi3c8AAAABCgbeFw` | `088b3dc22dcc37da8d0b6a211d7f23b4d4bd669ed660612a38f38e9ab9ccc216` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 7 | `I_kwDOSWRi3c8AAAABCgbeLA` | `808110d3f46edf4abe77a15e523c298c0843c59beb39f670acbcfc1ce1dbb709` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 8 | `I_kwDOSWRi3c8AAAABCgbeQA` | `fd9ee9c43909b607d97cc4e8384ce4c8d85ff55f58441c263fc230bce7cd9e77` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 9 | `I_kwDOSWRi3c8AAAABCgbeWQ` | `68ff2f20d669253b50e55e44608b61a28285eb11e684af33703edf4309ca7d90` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
+| 10 | `I_kwDOSWRi3c8AAAABCgbecw` | `3407ccc25d37ea0c4a18d5ea262107a7c9759990de136a7c8233581bdf561dc5` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:12Z | yes |
 
 ## Batch 3 — open issues #11–#21
 
