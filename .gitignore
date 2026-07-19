@@ -11,3 +11,8 @@ __pycache__/
 # /workspaces/ocr-container/.claude/agent-memory/, not per-repo. If you
 # see a .claude/ tree here, it is leakage; clean it up.
 .claude/
+
+# Codex agent config — same policy as .claude/ above. bind_project.py
+# scaffolds .codex/agents/ per repo, but agent config is workspace-level,
+# so it is not committed here.
+.codex/

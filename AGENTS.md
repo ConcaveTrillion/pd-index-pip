@@ -48,8 +48,8 @@ change any step below.
 
 1. **Check the working tree.** `git status --short`. Surface or resolve stray
    uncommitted work before starting — don't build on it.
-1. **Read repo guidance.** This repo's `CLAUDE.md` and `CONVENTIONS.md` for
-   repo-specific rules.
+1. **Read repo guidance.** This repo's `AGENTS.md` and `CONVENTIONS.md` for
+   repo-specific rules. `CLAUDE.md` is a symlink to `AGENTS.md`.
 1. **Consult repository context.** Read [DOCGRAPH.md](DOCGRAPH.md) when present,
    then use its retrieval workflow and authored `docs/context/` ground truth.
    Also consult the relevant folders under `docs/`:
