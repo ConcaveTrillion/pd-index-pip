@@ -42,7 +42,7 @@ Former issue URLs all follow
 
 | # | Node ID | Raw digest (SHA-256) | Destination | Deleted | Verified absent |
 | --- | --- | --- | --- | --- | --- |
-| 19 | `I_kwDOSWRi3c8AAAABDJFTFw` | `a22f958583a1d8716181309ac39efd5b12da93e85d70723ae5d381e0954edccb` | `docs/architecture/python-release-asset-index.md` | pending | pending |
+| 19 | `I_kwDOSWRi3c8AAAABDJFTFw` | `a22f958583a1d8716181309ac39efd5b12da93e85d70723ae5d381e0954edccb` | `docs/architecture/python-release-asset-index.md` | 2026-07-19T11:11Z | yes |
 
 ## Batch 2 — open issues #1–#10
 
