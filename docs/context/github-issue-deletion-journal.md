@@ -63,16 +63,16 @@ Former issue URLs all follow
 
 | # | Node ID | Raw digest (SHA-256) | Destination | Deleted | Verified absent |
 | --- | --- | --- | --- | --- | --- |
-| 11 | `I_kwDOSWRi3c8AAAABCgbehg` | `341245624b9dc21625dbcb5aa27e473e999fafa386badd4b6898365c55f9fe55` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 12 | `I_kwDOSWRi3c8AAAABCgbeqQ` | `e5b607410bd95190c7a313280517414e3d4e2c6adb69086c71b1f8df7473596f` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 13 | `I_kwDOSWRi3c8AAAABCgbevQ` | `f24440c674e7188f708533145c6405ee089c23de4a6919264c6af6252108f57b` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 14 | `I_kwDOSWRi3c8AAAABCgbe0g` | `89543c7f35ca0e2a2725a65b61008868630b5fb136b27331fb4ddc52f37c1952` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 15 | `I_kwDOSWRi3c8AAAABCgbe8g` | `85fd2cba46d98906215e48bbdaba66878ff305f5c9053b713782b55c1a170e5f` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | pending | pending |
-| 16 | `I_kwDOSWRi3c8AAAABDJFSeQ` | `a3aa493d665be5696644025922350b000cba33f50d988381c416649a78ffc4fd` | `docs/architecture/python-release-asset-index.md` | pending | pending |
-| 17 | `I_kwDOSWRi3c8AAAABDJFStQ` | `f1c0fe6964b6ef9e60cd8541d7480bc7ad5c12c5bca3b45767e70a1d3257fe8b` | `docs/architecture/python-release-asset-index.md` | pending | pending |
-| 18 | `I_kwDOSWRi3c8AAAABDJFS5Q` | `1980705ce9748e771d6eaa3e8686fc80dd3abf7e86923b0d613a43fd7917097f` | `README.md` | pending | pending |
-| 20 | `I_kwDOSWRi3c8AAAABDJFTRQ` | `d3f25550dde98c6d1b726ca28673f1d45aaca1b9c683e9fc8f691f18d19a6251` | `docs/architecture/python-release-asset-index.md` | pending | pending |
-| 21 | `I_kwDOSWRi3c8AAAABDJFTgA` | `81420bbb78642fa6f4e7bb523a546d2a9ed2e5d2656c03c7c120b08ba3c2a3c4` | `docs/issues/2026-07-19-gh-021-resolve-gh-executable.md` | pending | pending |
+| 11 | `I_kwDOSWRi3c8AAAABCgbehg` | `341245624b9dc21625dbcb5aa27e473e999fafa386badd4b6898365c55f9fe55` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:13Z | yes |
+| 12 | `I_kwDOSWRi3c8AAAABCgbeqQ` | `e5b607410bd95190c7a313280517414e3d4e2c6adb69086c71b1f8df7473596f` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:13Z | yes |
+| 13 | `I_kwDOSWRi3c8AAAABCgbevQ` | `f24440c674e7188f708533145c6405ee089c23de4a6919264c6af6252108f57b` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:13Z | yes |
+| 14 | `I_kwDOSWRi3c8AAAABCgbe0g` | `89543c7f35ca0e2a2725a65b61008868630b5fb136b27331fb4ddc52f37c1952` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:13Z | yes |
+| 15 | `I_kwDOSWRi3c8AAAABCgbe8g` | `85fd2cba46d98906215e48bbdaba66878ff305f5c9053b713782b55c1a170e5f` | `docs/issues/2026-07-19-gh-001-015-rename-sweep.md` | 2026-07-19T11:13Z | yes |
+| 16 | `I_kwDOSWRi3c8AAAABDJFSeQ` | `a3aa493d665be5696644025922350b000cba33f50d988381c416649a78ffc4fd` | `docs/architecture/python-release-asset-index.md` | 2026-07-19T11:13Z | yes |
+| 17 | `I_kwDOSWRi3c8AAAABDJFStQ` | `f1c0fe6964b6ef9e60cd8541d7480bc7ad5c12c5bca3b45767e70a1d3257fe8b` | `docs/architecture/python-release-asset-index.md` | 2026-07-19T11:13Z | yes |
+| 18 | `I_kwDOSWRi3c8AAAABDJFS5Q` | `1980705ce9748e771d6eaa3e8686fc80dd3abf7e86923b0d613a43fd7917097f` | `README.md` | 2026-07-19T11:13Z | yes |
+| 20 | `I_kwDOSWRi3c8AAAABDJFTRQ` | `d3f25550dde98c6d1b726ca28673f1d45aaca1b9c683e9fc8f691f18d19a6251` | `docs/architecture/python-release-asset-index.md` | 2026-07-19T11:13Z | yes |
+| 21 | `I_kwDOSWRi3c8AAAABDJFTgA` | `81420bbb78642fa6f4e7bb523a546d2a9ed2e5d2656c03c7c120b08ba3c2a3c4` | `docs/issues/2026-07-19-gh-021-resolve-gh-executable.md` | 2026-07-19T11:13Z | yes |
 
 ## Verification
 
