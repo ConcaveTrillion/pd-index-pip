@@ -93,7 +93,7 @@ shell-check: ## Check shell scripts with ShellCheck
 	uv run shellcheck -x scripts/*.sh
 
 docs-check: ## Check Markdown formatting
-	uv run mdformat --check README.md CONVENTIONS.md docs
+	uv run mdformat --check README.md CONVENTIONS.md docs --exclude "docs/issues/TEMPLATE.md"
 
 static-check: lint-check typecheck actionlint shell-check docs-check ## Run all read-only static checks
 
