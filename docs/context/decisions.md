@@ -77,3 +77,39 @@ Kind: context
   `pyproject.toml`, and `scripts/release-common.sh` implement the current
   commands, surfaces, and suppressions.
 - **Remaining work:** none.
+
+### 2026-07-19 Retired: Issue tracker migration pickup prompt
+
+- **Old path:** `docs/handoff/2026-07-17-issue-tracker-migration.md` (kept, not
+  deleted)
+- **Outcome:** superseded
+- **Superseded by:** `docs/runbooks/github-issues-to-docgraph-migration.md`
+- **Rationale kept:** The handoff proposed a `docs/roadmap.md` plus
+  archive-then-`git rm` pattern. The owner chose governed `docs/issues/` records
+  instead, so the procedure was never run. Its two durable findings survive: the
+  mdformat frontmatter gap, which it diagnosed correctly and which commits
+  `5238389` and `4a774a6` fixed, and the absence of `.pre-commit-config.yaml` in
+  this repo. Its scope assumption did not hold — five of the six index-hardening
+  issues were already implemented.
+- **Why kept rather than deleted:** It is a session-continuity record, already
+  marked `retired` with `superseded_by` set, and the runbook links it to explain
+  what it replaced. Deleting it would break that inbound reference without
+  recovering anything.
+- **Remaining work:** none.
+
+### 2026-07-19 Implemented: GitHub issues to docgraph migration runbook
+
+- **Path:** `docs/runbooks/github-issues-to-docgraph-migration.md`
+- **Outcome:** implemented
+- **Evidence:** All 21 GitHub issues permanently deleted and verified absent;
+  Issues disabled (`hasIssuesEnabled: false`); every governed destination
+  present on remote `master` at commit `3c9a4df`. Audit trail in
+  `docs/context/github-issue-deletion-journal.md` and
+  `docs/context/github-issue-migration-ledger.md`.
+- **Rationale kept:** Status moved from `active` to `implemented` so agents do
+  not read it as pending work. Its pre-cutover gate table is preserved as a
+  snapshot, with a banner recording that gates 6 and 8 were resolved before
+  deletion began.
+- **Remaining work:** none for the migration. Issue #21's work — resolving the
+  `gh` executable — remains open in `docs/issues/`, and the rename cluster
+  remains `needs-owner-decision`.

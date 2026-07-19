@@ -30,17 +30,18 @@ actionlint, ShellCheck, Markdown formatting checks, and pytest.
 
 ## In-flight work
 
-The GitHub issue tracker is being migrated into governed documentation. All 21
-issues are accounted for in the
-[migration ledger](github-issue-migration-ledger.md); none has been deleted from
-GitHub. The cutover is blocked on two gates: organization-level issue deletion
-is unconfirmed, and the migration has not been pushed to the remote default
-branch. The procedure is in the
-[migration runbook](../runbooks/github-issues-to-docgraph-migration.md).
+The GitHub issue tracker migration is complete. All 21 issues were permanently
+deleted on 2026-07-19 and GitHub Issues is disabled, so `docs/issues/` is now
+the only issue tracker for this repository. The audit trail is the
+[migration ledger](github-issue-migration-ledger.md) and the
+[deletion journal](github-issue-deletion-journal.md).
 
-One piece of genuine open work came out of that migration: resolving the `gh`
-executable before subprocess invocation, in
-[the gh-021 record](../issues/2026-07-19-gh-021-resolve-gh-executable.md).
+Two items survive that migration:
+
+- **Active work:** resolving the `gh` executable before subprocess invocation,
+  in [the gh-021 record](../issues/2026-07-19-gh-021-resolve-gh-executable.md).
+- **Needs owner decision:** what remains of the pd-index rename effort, in
+  [the rename sweep record](../issues/2026-07-19-gh-001-015-rename-sweep.md).
 
 ## Risks and test health
 

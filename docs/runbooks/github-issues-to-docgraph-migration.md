@@ -1,6 +1,6 @@
 ---
 kind: runbook
-status: active
+status: implemented
 owner: CT
 created: 2026-07-19
 last_verified: 2026-07-19
@@ -11,11 +11,21 @@ last_verified: 2026-07-19
 ## Agent Index
 
 - **Kind:** runbook
-- **Status:** active
+- **Status:** implemented
 - **Read when:** executing the GitHub Issues cutover for `pdomain-index-pip`, or
   checking whether this repo is ready for it.
 - **Search terms:** issue migration, docgraph, delete issues, deletion journal,
   mdformat frontmatter, rename sweep, index hardening.
+
+> **Executed 2026-07-19.** This runbook has been fully carried out. All 21
+> GitHub issues were permanently deleted, Issues was disabled
+> (`hasIssuesEnabled: false`), and every governed destination is present on
+> remote `master`. The audit trail is the
+> [deletion journal](../context/github-issue-deletion-journal.md) and the
+> [migration ledger](../context/github-issue-migration-ledger.md). It is kept as
+> the record of how the cutover ran, not as pending work. The gate table below
+> is preserved as the pre-cutover snapshot; gates 6 and 8 were both resolved
+> before deletion began.
 
 ## What this adapts, and what changed
 
@@ -82,7 +92,7 @@ mergeable with auto-merge already armed.
 Consider adding a master-push trigger to the `ci` workflow in the same change,
 so formatting breaks surface at the commit instead of on the next unrelated PR.
 
-## Readiness gates: gate 6 fails, gate 8 is unverified
+## Readiness gates: all ten passed at cutover
 
 Verified 2026-07-19 against the shared runbook's ten gates.
 
