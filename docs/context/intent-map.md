@@ -49,7 +49,13 @@ None.
 
 ## Needs owner decision
 
-None.
+- **Needs owner decision:** What remains of the pd-index rename effort. Fifteen
+  former GitHub tracking issues (#1–#15) cannot be classified: the plan defining
+  their work is absent from `/workspaces`, and the `pd-index-pip` target naming
+  was superseded by the `pdomain-*` rename. Legacy `pd-*` names still appear in
+  other repositories, so some sweep work is real but may belong on
+  `pdomain-ops`. Evidence:
+  [rename sweep record](../issues/2026-07-19-gh-001-015-rename-sweep.md).
 
 ## Legacy-unverified sweep
 

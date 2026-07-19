@@ -1,6 +1,6 @@
 ---
 kind: handoff
-status: "active"
+status: "retired"
 created: "2026-07-17"
 created_at: "2026-07-17T09:19:04Z"
 owner: CT
@@ -9,6 +9,7 @@ scope: issue-tracker-migration
 worktree: /workspaces/pdomain/pdomain-index-pip
 base_commit: cab8705b88e86757d695a8b40c40062dcb682729
 supersedes: ""
+superseded_by: "docs/runbooks/github-issues-to-docgraph-migration.md"
 ---
 
 # Issue tracker migration pickup prompt — pdomain-index-pip
@@ -16,11 +17,20 @@ supersedes: ""
 ## Agent Index
 
 - **Kind:** handoff
-- **Status:** active
+- **Status:** retired
 - **Read when:** picking up the task of migrating this repo's GitHub issue
   tracker into docs, before creating `docs/roadmap.md` or touching any issue.
 - **Search terms:** issue tracker migration, roadmap migration, close issues,
   archive issues, docgraph handoff, pd-index-pip backlog
+
+> **Retired 2026-07-19.** Superseded by the
+> [migration runbook](../runbooks/github-issues-to-docgraph-migration.md), which
+> uses governed `docs/issues/` records instead of the `docs/roadmap.md` plus
+> archive-then-`git rm` pattern proposed here. This document's mdformat
+> frontmatter finding was correct and has been fixed; its `pre-commit` note
+> remains accurate. Its scope assumption did not hold: five of the six
+> index-hardening issues were already implemented. Do not follow the procedure
+> below.
 
 ## Goal
 

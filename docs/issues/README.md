@@ -37,6 +37,10 @@ external issue tracker.
 
 ## Open issues
 
+- [Resolve the gh executable before subprocess invocation](2026-07-19-gh-021-resolve-gh-executable.md)
+  — active.
+- [Rename sweep tracking cluster](2026-07-19-gh-001-015-rename-sweep.md) —
+  needs owner decision.
 - Migration records are listed in the [intent map](../context/intent-map.md).
 
 ## Resolved issues
