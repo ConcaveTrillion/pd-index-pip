@@ -44,6 +44,8 @@ external issue tracker.
   — active.
 - [Rename sweep tracking cluster](2026-07-19-gh-001-015-rename-sweep.md) —
   needs owner decision.
+- [Weekly dep-refresh cannot fully auto-land: branches accumulate and are
+  never deleted](2026-08-08-dep-refresh-cannot-auto-land.md) — active.
 - Migration records are listed in the [intent map](../context/intent-map.md).
 
 ## Where resolved work is recorded
