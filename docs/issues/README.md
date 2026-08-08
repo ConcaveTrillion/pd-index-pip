@@ -30,6 +30,9 @@ external issue tracker.
 - Name migrated GitHub records `YYYY-MM-DD-gh-NNN-short-slug.md`.
 - Keep frontmatter and Agent Index lifecycle fields consistent.
 - Use `Status: active` for unresolved work.
+- On resolution, route through `doc-retirer`: promote anything durable into the
+  doc that owns it, delete the report, and write a tombstone to
+  `docs/context/decisions.md`. Git history keeps the report.
 - Link each record from governed context.
 - Stage each record before reindexing and running the strict docgraph check.
 - Copy `docs/issues/TEMPLATE.md` when creating a report. The template is
@@ -43,7 +46,7 @@ external issue tracker.
   needs owner decision.
 - Migration records are listed in the [intent map](../context/intent-map.md).
 
-## Resolved issues
+## Where resolved work is recorded
 
 - Completed GitHub issues are recorded in the
   [migration ledger](../context/github-issue-migration-ledger.md).
