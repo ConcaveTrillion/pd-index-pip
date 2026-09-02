@@ -30,6 +30,7 @@ RELEASE_LIMIT = 1000
 # Releases. Keep alphabetized. Append a new repo when it starts cutting releases;
 # safe to list a repo with zero releases (renders an empty page).
 REPOS: list[str] = [
+    "pdomain-book-contracts",
     "pdomain-book-tools",
     "pdomain-ocr-cli",
     "pdomain-ocr-labeler-spa",
